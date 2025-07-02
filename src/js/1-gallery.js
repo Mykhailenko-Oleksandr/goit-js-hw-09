@@ -89,6 +89,6 @@ function createMarkup(arr) {
 const modalImages = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionPosition: 'bottom',
-    captionDelay: '250',
+    captionDelay: 250,
     captionClass: 'gallery-caption'
 });
