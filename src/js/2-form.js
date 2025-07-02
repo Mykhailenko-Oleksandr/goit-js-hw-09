@@ -29,11 +29,15 @@ function onFormSubmit(event) {
     event.preventDefault()
     const email = event.currentTarget.elements.email.value;
     const message = event.currentTarget.elements.message.value;
+
     if (email === '' || message === '') {
         return alert('«Fill please all fields»')
     }
+
     console.log(formData);
     localStorage.removeItem('feedback-form-state')
+    formData.email = '';
+    formData.message = '';
     form.reset()
 }
 
